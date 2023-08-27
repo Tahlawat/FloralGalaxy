@@ -1,0 +1,16 @@
+<div>
+  <app-navbar></app-navbar>
+  <li class="flower-list">
+    <div *ngFor="let flowerItem of flowerData" class="flower-item">
+      <div class="image-container">
+        <img class="flower-image" [src]="flowerItem.image" width="150" height="100" />
+      </div>
+      <div class="flower-details">
+        <p class="flower-name">{{ flowerItem.name }}</p>
+        <p class="flower-price">{{ flowerItem.price | currency:'INR' }}</p>
+        <button (click)="addToCart()" class="cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </li>
+</div>
+<app-footer></app-footer>

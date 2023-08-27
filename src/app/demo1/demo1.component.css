@@ -1,0 +1,93 @@
+.Flowers {
+  width: 100%;
+  background: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+
+.image-container img {
+  width: -webkit-fill-available;
+}
+
+.Flowers .btn {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  /*padding: 12px 24px;*/
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Pacifico;
+
+
+
+
+}
+
+.Flowers .btn:hover {
+  background-color: rgb(241, 38, 38);
+  Color: white;
+
+}
+
+.image-text {
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: none;
+  /*padding: 10px;*/
+  font-family: Pacifico;
+}
+
+.image-text h5 {
+  padding-bottom: 30px;
+}
+
+.myFlower h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  color: purple;
+  padding-top: 0px;
+
+  font-family: Pacifico;
+}
+
+#myFlower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: purple;
+  padding-top: 0px;
+
+  font-family: cursive;
+}
+
+
+
+
+.myPic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  border-color: blueviolet;
+  border-style: solid;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}

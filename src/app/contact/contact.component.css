@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url(/assets/bg.jpg); 
+    min-height: 100vh;
+    font-family: cursive;
+    background-repeat: no-repeat;
+        background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content{
+    padding: 2rem;
+}
+
+.content h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+
+}
+
+.content p{
+    position: relative;
+}
+.cntct:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width:15% ;
+    top:11px;
+    left: 90px;
+    background-color:rgb(140, 190, 255);
+}
+.inside_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:1rem;
+    grid-gap: 1.2rem;
+}
+.box{
+    padding: 1.4rem;
+    background-color: rgb(60, 66, 66);
+    display: flex;
+    flex-direction: column;
+}
+.head-icons{
+    display:flex ;
+    align-items: center;
+}
+.headings{
+    color:rgb(137, 204, 201);
+    font-size: 1.3rem;
+    margin-left: 1.2rem;
+}
+.inside_container p{
+    font-size: 0.9rem;
+    margin-left: 4.4rem;
+}
+
+.head-icons .material-symbols-outlined{
+    font-size: 2rem;
+    display: flex;   
+    justify-content: center;
+    padding: 0.3rem;
+    color:rgba(255, 226, 243, 0.945);
+    align-items: center;
+}
+
+.social_icons i{
+    font-size: 1.4rem;
+    padding: 0 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.social_icons i:hover{
+    color:rgb(140, 190, 255);
+}
+.head-icons span{
+    /* background-color: rgb(112, 108, 108); */
+    background-color:rgb(97, 97, 97) ;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+.ng-container{
+    max-width: 1280px;
+    background-color: rgb(97, 97, 97);
+    margin: 2rem auto;
+    width: 100%;
+    color: aliceblue;
+}

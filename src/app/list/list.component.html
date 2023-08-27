@@ -1,0 +1,19 @@
+<div class="list">
+    <h3>flowers list</h3>
+        
+    <button  (click)="isShowing=!isShowing" [disabled] = "isDisabled" class="show">
+        <ng-container  *ngIf="!isShowing">Show flowers </ng-container>
+        <ng-container  *ngIf="isShowing">Hide flowers </ng-container >
+        <!-- <input type="text" [(ngModel)]="myName">-->  
+    </button>
+        
+    <div>{{myName}}</div>
+    
+    <ul *ngIf="isShowing" >
+        
+        <ng-container *ngFor="let singleflower of flowers;let i=index">
+            <app-flower [flower] = "singleflower"></app-flower>
+        </ng-container>
+    
+    </ul>
+</div>
